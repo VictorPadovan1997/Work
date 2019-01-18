@@ -1,0 +1,21 @@
+<ion-header >
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Camera 1</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="card-background-page">
+
+    <ion-card>
+      <img src="https://st.depositphotos.com/1129232/3943/v/950/depositphotos_39435093-stock-illustration-retro-camera-flat-icon-vector.jpg"/>
+   
+    </ion-card>
+<ion-content padding>
+    <ion-item>
+  <ion-label floating>URL</ion-label>
+    <ion-input hidden value="https://blog.paulhalliday.io" type="url" [(ngModel)]="url"></ion-input>
+  </ion-item>
+  <button ion-button block clear (click)="openWebpage(url)">Acesso a Camera</button>
+</ion-content>

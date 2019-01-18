@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+  <ion-label floating>URL</ion-label>
+    <ion-input type="url" [(ngModel)]="url"></ion-input>
+  </ion-item>
+  <button ion-button block clear (click)="openWebpage(url)">Open Webpage</button>
+   <!-- Real floating action button, fixed. It will not scroll with the content -->
+   
+  <ion-fab right bottom>
+      <button ion-fab color="primary"><ion-icon name="add"></ion-icon></button>
+      <ion-fab-list side="left">
+        <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+        <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+        <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+        <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+      </ion-fab-list>
+    </ion-fab>
+</ion-content>
